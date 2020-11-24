@@ -33,6 +33,7 @@ export default class Email extends Component {
         { value: `${emailAddress}${suggest}`, suggestion: suggest },
         () => this.selectText()
       );
+      this.value = `${emailAddress}${suggest}`
     }
 
     if (onChange) {
